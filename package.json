@@ -1,0 +1,23 @@
+{
+  "name": "jev-shell-history",
+  "version": "0.1.0",
+  "description": "Fish-style zsh history autosuggestions ranked by Jev (TypeSafe)",
+  "scripts": {
+    "test": "node --test 'src/**/*.test.ts'",
+    "typecheck": "tsc -p .",
+    "suggest": "node src/cli.ts",
+    "test:e2e": "zsh test/e2e.zsh"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "jev-suggest": "./src/cli.ts"
+  }
+}
