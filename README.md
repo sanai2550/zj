@@ -15,6 +15,18 @@ Command suggestions come from your history, so the second example requires a
 matching command to have been run previously. Jev selects existing candidates;
 it does not generate new shell commands.
 
+## Demo
+
+[![zj demo: inline navigation and Enter-to-run](demo/demo.gif)](https://github.com/sanai2550/zj/raw/refs/heads/main/demo/demo.mp4)
+
+[Watch or download the demo video](https://github.com/sanai2550/zj/raw/refs/heads/main/demo/demo.mp4).
+Recorded with the real plugin and Jev API using a fabricated workspace and history.
+The demo shows navigation to an unvisited folder and a history command, both
+accepted with **Enter**. No personal history or credentials are shown.
+
+To regenerate, install VHS and ffmpeg, export your API key, then run
+`zsh demo/make-demo.sh` with zsh 5.9+ and Node.js 24+ on your PATH.
+
 ## Installation
 
 Requirements:
